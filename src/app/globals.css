@@ -15,8 +15,8 @@
   --color-cream: #fbf1e1;
   --color-ink: #2e1a12;
 
-  --color-terracotta: #f0b892;
-  --color-terracotta-dark: #c1502e;
+  --color-olive: #dbe0ae;
+  --color-olive-dark: #74812f;
   --color-turquoise: #a9dfd8;
   --color-turquoise-dark: #147d77;
   --color-marigold: #f6d488;
@@ -25,6 +25,8 @@
   --color-coral-dark: #e8503f;
   --color-palm: #cfe0c9;
   --color-palm-dark: #2f6b4f;
+  --color-sky: #bfe0f2;
+  --color-sky-dark: #4a90b8;
 }
 
 body {

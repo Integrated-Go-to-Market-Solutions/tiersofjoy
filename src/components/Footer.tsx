@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="inline-block rounded-xl bg-cream p-2 shadow-md">
             <Image
               src="/photos/logo-tiers-of-joy.jpg"
-              alt="Tiers of Joy, Inedible Cakes by Renee"
+              alt="Tiers of Joy, Cakes by Renee"
               width={960}
               height={1113}
               className="h-20 w-auto"

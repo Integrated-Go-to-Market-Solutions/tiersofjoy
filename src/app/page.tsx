@@ -19,7 +19,7 @@ const TRUST_POINTS = [
   { emoji: "🧵", label: "Handmade to Order", bg: "bg-coral/35" },
   { emoji: "🎁", label: "Gift-Ready Presentation", bg: "bg-marigold/35" },
   { emoji: "💌", label: "Free Note Card", bg: "bg-turquoise/35" },
-  { emoji: "📍", label: "Local NJ Delivery", bg: "bg-terracotta/35" },
+  { emoji: "📍", label: "Local NJ Delivery", bg: "bg-olive/35" },
 ];
 
 const CATEGORY_BG: Record<string, string> = {
@@ -90,15 +90,15 @@ export default function Home() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       {/* Hero */}
-      <section className="relative mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-10 px-6 py-16 sm:py-24 md:grid-cols-2">
+      <section className="relative mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-8 px-6 py-8 sm:py-10 md:grid-cols-2">
         <div className="pointer-events-none absolute -left-16 top-10 h-40 w-40 rounded-full bg-marigold/40 blur-2xl" />
         <div className="pointer-events-none absolute right-0 top-40 h-32 w-32 rounded-full bg-turquoise/40 blur-2xl" />
-        <Reveal className="relative flex flex-col items-start gap-5 text-left">
-          <h1 className="font-display text-5xl font-semibold tracking-tight sm:text-6xl">
+        <Reveal className="relative flex flex-col items-start gap-4 text-left">
+          <h1 className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">
             Tiers of Joy
           </h1>
-          <p className="font-script text-3xl text-terracotta-dark">
-            Inedible Cakes by Renee
+          <p className="font-script text-3xl text-olive-dark">
+            Cakes by Renee
           </p>
           <p className="max-w-md text-lg text-ink/70">
             Handmade diaper cakes for baby showers, new arrivals, and the
@@ -108,7 +108,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-4">
             <Link
               href="/shop"
-              className="flex h-12 items-center justify-center rounded-full bg-terracotta-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+              className="flex h-12 items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
             >
               Shop Now
             </Link>
@@ -126,7 +126,7 @@ export default function Home() {
         </Reveal>
         <Reveal
           delay={150}
-          className="animate-float relative overflow-hidden rounded-[2rem] bg-turquoise/30 shadow-xl"
+          className="animate-float relative mx-auto max-h-[360px] w-full max-w-[300px] overflow-hidden rounded-[2rem] bg-turquoise/30 shadow-xl"
         >
           <Image
             src="/photos/montage-courtyard.jpg"
@@ -134,9 +134,42 @@ export default function Home() {
             width={704}
             height={1018}
             priority
-            className="h-full w-full object-cover"
+            className="h-[360px] w-full object-cover"
           />
         </Reveal>
+      </section>
+
+      {/* Team spirit callout */}
+      <section className="relative overflow-hidden bg-sky/25 py-16">
+        <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-sky/50 blur-3xl" />
+        <div className="pointer-events-none absolute -right-16 bottom-0 h-56 w-56 rounded-full bg-white/60 blur-3xl" />
+        <div className="relative mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-2">
+          <Reveal className="overflow-hidden rounded-[2rem] shadow-xl">
+            <Image
+              src="/photos/cake-sports-allstar.jpg"
+              alt="A sports-themed diaper cake with football, basketball, and soccer accents"
+              width={896}
+              height={1062}
+              className="h-full w-full object-cover"
+            />
+          </Reveal>
+          <Reveal delay={100} className="flex flex-col items-start gap-4 text-left">
+            <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+              Cheering on a Future MVP?
+            </h2>
+            <p className="text-lg text-ink/70">
+              Do you know a baby sports fan on the way? We customize for any
+              NBA, NFL, MLB, or NHL team, plus college teams. We&apos;ve even
+              done a local high school alumni cake!
+            </p>
+            <Link
+              href="/contact"
+              className="flex h-12 items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+            >
+              Request a Team Cake
+            </Link>
+          </Reveal>
+        </div>
       </section>
 
       <Marquee items={MARQUEE_ITEMS} />
@@ -264,7 +297,7 @@ export default function Home() {
         <div className="mt-10 flex justify-center">
           <Link
             href="/shop"
-            className="flex h-12 items-center justify-center rounded-full bg-terracotta-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+            className="flex h-12 items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
           >
             View All Products
           </Link>
@@ -302,7 +335,7 @@ export default function Home() {
             Own a boutique, daycare, or pet grooming business?
           </h2>
           <p className="max-w-xl text-ink/70">
-            Tiers of Joy partners with local NJ businesses to bring inedible
+            Tiers of Joy partners with local NJ businesses to bring handmade
             cakes to your customers. No pricing pressure, just a simple
             conversation.
           </p>

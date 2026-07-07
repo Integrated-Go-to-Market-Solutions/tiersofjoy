@@ -27,7 +27,7 @@ export default function EmailSignup() {
         type="email"
         required
         placeholder="Your email address"
-        className="h-12 flex-1 rounded-full border-2 border-ink/15 bg-white px-5 text-base outline-none focus:border-terracotta-dark"
+        className="h-12 flex-1 rounded-full border-2 border-ink/15 bg-white px-5 text-base outline-none focus:border-olive-dark"
       />
       <button
         type="submit"

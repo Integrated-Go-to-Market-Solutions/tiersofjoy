@@ -25,7 +25,7 @@ export default function Accordion({
                 {item.question}
               </span>
               <span
-                className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-terracotta/40 text-lg font-bold text-terracotta-dark transition-transform duration-300 ${
+                className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-olive/40 text-lg font-bold text-olive-dark transition-transform duration-300 ${
                   open ? "rotate-180" : ""
                 }`}
               >

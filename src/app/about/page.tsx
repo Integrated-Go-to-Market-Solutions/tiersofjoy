@@ -4,14 +4,14 @@ import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About | Tiers of Joy",
-  description: "The story behind Tiers of Joy, Inedible Cakes by Renee.",
+  description: "The story behind Tiers of Joy, Cakes by Renee.",
 };
 
 export default function About() {
   return (
     <div className="mx-auto w-full max-w-2xl px-6 py-16">
       <Reveal>
-        <span className="font-display inline-block rounded-full bg-marigold/40 px-4 py-1 text-sm font-bold uppercase tracking-wide text-terracotta-dark">
+        <span className="font-display inline-block rounded-full bg-marigold/40 px-4 py-1 text-sm font-bold uppercase tracking-wide text-olive-dark">
           Est. {SITE.sinceYear}
         </span>
         <h1 className="font-display mt-4 text-4xl font-semibold tracking-tight">

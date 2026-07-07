@@ -1,4 +1,4 @@
-export type Theme = "terracotta" | "turquoise" | "marigold" | "coral";
+export type Theme = "olive" | "turquoise" | "marigold" | "coral";
 export type Topper = "bow" | "goggles" | "paw";
 export type CategorySlug = "baby-shower" | "swim" | "pet";
 
@@ -115,13 +115,13 @@ export const PRODUCTS: Product[] = [
     name: "Sunset Classic",
     category: "baby-shower",
     tiers: 4,
-    theme: "terracotta",
+    theme: "olive",
     topper: "bow",
     occasion: "Baby Shower",
     size: "4-tier · approx. 45 diapers",
     priceRange: "$110–$135",
     description:
-      "Our tallest centerpiece: four generous tiers in terracotta and cream.",
+      "Our tallest centerpiece: four generous tiers in olive and cream.",
     bestSeller: true,
   },
   {
@@ -196,7 +196,7 @@ export const PRODUCTS: Product[] = [
     name: "New Pup Celebration",
     category: "pet",
     tiers: 3,
-    theme: "terracotta",
+    theme: "olive",
     topper: "paw",
     occasion: "New Puppy",
     size: "3-tier · wee-wee pads, treats, chew toys",

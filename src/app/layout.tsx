@@ -24,7 +24,7 @@ const yellowtail = Yellowtail({
 export const metadata: Metadata = {
   title: "Tiers of Joy | Handmade Diaper Cakes & Baby Shower Gifts in NJ",
   description:
-    "Handcrafted diaper cakes for baby showers, swim showers, and new puppies. Inedible cakes by Renee, made fresh in New Jersey.",
+    "Handcrafted diaper cakes for baby showers, swim showers, and new puppies. Cakes by Renee, made fresh in New Jersey.",
 };
 
 export default function RootLayout({

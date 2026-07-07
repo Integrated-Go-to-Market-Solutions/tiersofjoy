@@ -1,7 +1,7 @@
 import type { Theme, Topper } from "@/lib/products";
 
 const THEME_COLORS: Record<Theme, { light: string; dark: string }> = {
-  terracotta: { light: "#f0b892", dark: "#c1502e" },
+  olive: { light: "#dbe0ae", dark: "#74812f" },
   turquoise: { light: "#a9dfd8", dark: "#147d77" },
   marigold: { light: "#f6d488", dark: "#e29317" },
   coral: { light: "#fac2b8", dark: "#e8503f" },

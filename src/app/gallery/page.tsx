@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const THEME_BG: Record<Theme, string> = {
-  terracotta: "bg-terracotta/35",
+  olive: "bg-olive/35",
   turquoise: "bg-turquoise/35",
   marigold: "bg-marigold/35",
   coral: "bg-coral/35",
@@ -95,7 +95,7 @@ export default function Gallery() {
         </p>
         <Link
           href="/contact"
-          className="flex h-12 items-center justify-center rounded-full bg-terracotta-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+          className="flex h-12 items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
         >
           Request a Custom Design
         </Link>

@@ -48,7 +48,7 @@ export default function InquiryForm({
     PRODUCTS.find((p) => p.slug === initialDesign)?.name ?? "";
 
   const fieldClass =
-    "h-11 rounded-lg border-2 border-ink/15 bg-white px-4 text-base outline-none focus:border-terracotta-dark";
+    "h-11 rounded-lg border-2 border-ink/15 bg-white px-4 text-base outline-none focus:border-olive-dark";
 
   return (
     <div className="flex flex-col gap-4">
@@ -121,12 +121,12 @@ export default function InquiryForm({
             required
             rows={5}
             placeholder="Tell us about your event, theme, colors, and budget."
-            className="rounded-lg border-2 border-ink/15 bg-white px-4 py-3 text-base outline-none focus:border-terracotta-dark"
+            className="rounded-lg border-2 border-ink/15 bg-white px-4 py-3 text-base outline-none focus:border-olive-dark"
           />
         </label>
         <button
           type="submit"
-          className="flex h-12 items-center justify-center rounded-full bg-terracotta-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+          className="flex h-12 items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
         >
           Send Inquiry
         </button>

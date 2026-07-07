@@ -30,7 +30,7 @@ const STEPS = [
     title: "Delivery or Pickup",
     description:
       "Local delivery is available in New Jersey, with nationwide shipping for gifting from anywhere (coming soon). Pickup can be arranged too.",
-    bg: "bg-terracotta/40",
+    bg: "bg-olive/40",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function HowItWorks() {
 
       <Link
         href="/contact"
-        className="mt-10 flex h-12 w-full max-w-xs items-center justify-center rounded-full bg-terracotta-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+        className="mt-10 flex h-12 w-full max-w-xs items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
       >
         Start Your Inquiry
       </Link>
