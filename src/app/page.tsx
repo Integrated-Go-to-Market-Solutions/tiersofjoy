@@ -144,7 +144,7 @@ export default function Home() {
         <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-sky/50 blur-3xl" />
         <div className="pointer-events-none absolute -right-16 bottom-0 h-56 w-56 rounded-full bg-white/60 blur-3xl" />
         <div className="relative mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-2">
-          <Reveal className="overflow-hidden rounded-[2rem] shadow-xl">
+          <Reveal className="relative overflow-hidden rounded-[2rem] shadow-xl">
             <Image
               src="/photos/cake-sports-allstar.jpg"
               alt="A sports-themed diaper cake with football, basketball, and soccer accents"
@@ -152,6 +152,9 @@ export default function Home() {
               height={1062}
               className="h-full w-full object-cover"
             />
+            <span className="absolute bottom-4 left-4 rounded-full bg-slate-dark/90 px-4 py-1.5 text-sm font-bold uppercase tracking-wide text-cream">
+              Knicks
+            </span>
           </Reveal>
           <Reveal delay={100} className="flex flex-col items-start gap-4 text-left">
             <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">

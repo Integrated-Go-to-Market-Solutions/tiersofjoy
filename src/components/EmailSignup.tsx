@@ -31,7 +31,7 @@ export default function EmailSignup() {
       />
       <button
         type="submit"
-        className="h-12 rounded-full bg-ink px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
+        className="h-12 rounded-full bg-slate-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
       >
         Subscribe
       </button>

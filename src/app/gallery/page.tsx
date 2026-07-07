@@ -42,7 +42,7 @@ export default function Gallery() {
                 height={photo.height}
                 className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-[linear-gradient(to_top,rgba(46,26,18,0.8),transparent)] p-3 pt-8">
+              <div className="absolute inset-x-0 bottom-0 bg-[linear-gradient(to_top,rgba(79,107,114,0.85),transparent)] p-3 pt-8">
                 <p className="text-xs font-bold uppercase tracking-wide text-marigold">
                   {photo.tag}
                 </p>

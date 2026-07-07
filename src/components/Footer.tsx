@@ -20,7 +20,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-ink text-cream">
+    <footer className="bg-slate-dark text-cream">
       <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-10 px-6 py-14 sm:grid-cols-3">
         <div>
           <div className="inline-block rounded-xl bg-cream p-2 shadow-md">
