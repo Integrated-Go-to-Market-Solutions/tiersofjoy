@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Fraunces } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -14,9 +14,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "Tiers of Joy",
-  description: "Tiers of Joy",
+  title: "Tiers of Joy | Handmade Diaper Cakes & Baby Shower Gifts in NJ",
+  description:
+    "Handcrafted diaper cakes for baby showers, swim showers, and new puppies. Inedible cakes by Renee, made fresh in New Jersey with local delivery and nationwide shipping.",
 };
 
 export default function RootLayout({
@@ -27,9 +33,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-cream text-ink">
         <Header />
         <main className="flex flex-1 flex-col">{children}</main>
         <Footer />
