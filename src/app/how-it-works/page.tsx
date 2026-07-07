@@ -12,25 +12,25 @@ const STEPS = [
     title: "Browse & Choose",
     description:
       "Explore the shop for baby shower, swim, or pet cakes, or tell us you'd like something fully custom.",
-    bg: "bg-coral/40",
+    bg: "bg-blush/40",
   },
   {
     title: "Send an Inquiry",
     description:
       "Share your event date, theme, colors, and budget through the contact form. This isn't a final order yet, just the start of the conversation.",
-    bg: "bg-turquoise/40",
+    bg: "bg-powder/40",
   },
   {
     title: "Confirm the Details",
     description:
       "Renee will follow up to confirm availability, finalize the design, and provide a final price before anything is booked.",
-    bg: "bg-marigold/40",
+    bg: "bg-butter/40",
   },
   {
     title: "Delivery or Pickup",
     description:
       "Local delivery is available in New Jersey, with nationwide shipping for gifting from anywhere (coming soon). Pickup can be arranged too.",
-    bg: "bg-olive/40",
+    bg: "bg-seafoam/40",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function HowItWorks() {
         ))}
       </ol>
 
-      <Reveal delay={400} className="mt-12 rounded-2xl bg-turquoise/25 p-6 text-sm text-ink/70">
+      <Reveal delay={400} className="mt-12 rounded-2xl bg-powder/25 p-6 text-sm text-ink/70">
         <strong className="font-semibold text-ink">Lead time:</strong> please
         reach out at least 2 weeks before your event when possible. Rush
         orders may be accommodated depending on availability.
@@ -75,7 +75,7 @@ export default function HowItWorks() {
 
       <Link
         href="/contact"
-        className="mt-10 flex h-12 w-full max-w-xs items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+        className="mt-10 flex h-12 w-full max-w-xs items-center justify-center rounded-full bg-slate-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-slate-darker hover:shadow-lg"
       >
         Start Your Inquiry
       </Link>

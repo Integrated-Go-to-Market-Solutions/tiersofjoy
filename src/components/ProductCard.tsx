@@ -3,17 +3,17 @@ import TieredCakeIcon from "@/components/TieredCakeIcon";
 import type { Product, Theme } from "@/lib/products";
 
 const THEME_BG: Record<Theme, string> = {
-  olive: "bg-olive/35",
-  turquoise: "bg-turquoise/35",
-  marigold: "bg-marigold/35",
-  coral: "bg-coral/35",
+  seafoam: "bg-seafoam/35",
+  powder: "bg-powder/35",
+  butter: "bg-butter/35",
+  blush: "bg-blush/35",
 };
 
 const THEME_TEXT: Record<Theme, string> = {
-  olive: "text-olive-dark",
-  turquoise: "text-turquoise-dark",
-  marigold: "text-marigold-dark",
-  coral: "text-coral-dark",
+  seafoam: "text-seafoam-dark",
+  powder: "text-powder-dark",
+  butter: "text-butter-dark",
+  blush: "text-blush-dark",
 };
 
 export default function ProductCard({ product }: { product: Product }) {

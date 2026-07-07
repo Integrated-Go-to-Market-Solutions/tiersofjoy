@@ -12,10 +12,10 @@ import {
 } from "@/lib/products";
 
 const THEME_BG: Record<Theme, string> = {
-  olive: "bg-olive/35",
-  turquoise: "bg-turquoise/35",
-  marigold: "bg-marigold/35",
-  coral: "bg-coral/35",
+  seafoam: "bg-seafoam/35",
+  powder: "bg-powder/35",
+  butter: "bg-butter/35",
+  blush: "bg-blush/35",
 };
 
 export function generateStaticParams() {
@@ -97,7 +97,7 @@ export default async function ProductPage({
           </dl>
           <Link
             href={`/contact?design=${product.slug}`}
-            className="mt-2 flex h-12 w-full max-w-xs items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+            className="mt-2 flex h-12 w-full max-w-xs items-center justify-center rounded-full bg-slate-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-slate-darker hover:shadow-lg"
           >
             Request This Cake
           </Link>

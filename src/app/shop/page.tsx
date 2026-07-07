@@ -41,7 +41,7 @@ export default async function Shop({
           href="/shop"
           className={`rounded-full px-5 py-2 text-sm font-semibold transition-all duration-300 hover:scale-105 ${
             !activeCategory
-              ? "bg-olive-dark text-cream shadow-md"
+              ? "bg-slate-dark text-cream shadow-md"
               : "border-2 border-ink/15 hover:bg-ink/5"
           }`}
         >
@@ -53,7 +53,7 @@ export default async function Shop({
             href={`/shop?category=${cat.slug}`}
             className={`rounded-full px-5 py-2 text-sm font-semibold transition-all duration-300 hover:scale-105 ${
               activeCategory === cat.slug
-                ? "bg-olive-dark text-cream shadow-md"
+                ? "bg-slate-dark text-cream shadow-md"
                 : "border-2 border-ink/15 hover:bg-ink/5"
             }`}
           >

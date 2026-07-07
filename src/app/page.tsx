@@ -16,16 +16,16 @@ const MARQUEE_ITEMS = [
 ];
 
 const TRUST_POINTS = [
-  { emoji: "🧵", label: "Handmade to Order", bg: "bg-coral/35" },
-  { emoji: "🎁", label: "Gift-Ready Presentation", bg: "bg-marigold/35" },
-  { emoji: "💌", label: "Free Note Card", bg: "bg-turquoise/35" },
-  { emoji: "📍", label: "Local NJ Delivery", bg: "bg-olive/35" },
+  { emoji: "🧵", label: "Handmade to Order", bg: "bg-blush/35" },
+  { emoji: "🎁", label: "Gift-Ready Presentation", bg: "bg-butter/35" },
+  { emoji: "💌", label: "Free Note Card", bg: "bg-powder/35" },
+  { emoji: "📍", label: "Local NJ Delivery", bg: "bg-seafoam/35" },
 ];
 
 const CATEGORY_BG: Record<string, string> = {
-  "baby-shower": "bg-coral/30",
-  swim: "bg-turquoise/30",
-  pet: "bg-marigold/30",
+  "baby-shower": "bg-blush/30",
+  swim: "bg-powder/30",
+  pet: "bg-butter/30",
 };
 
 const FULFILLMENT_OPTIONS = [
@@ -91,13 +91,13 @@ export default function Home() {
     <div className="flex flex-col overflow-x-hidden">
       {/* Hero */}
       <section className="relative mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-8 px-6 py-8 sm:py-10 md:grid-cols-2">
-        <div className="pointer-events-none absolute -left-16 top-10 h-40 w-40 rounded-full bg-marigold/40 blur-2xl" />
-        <div className="pointer-events-none absolute right-0 top-40 h-32 w-32 rounded-full bg-turquoise/40 blur-2xl" />
+        <div className="pointer-events-none absolute -left-16 top-10 h-40 w-40 rounded-full bg-butter/40 blur-2xl" />
+        <div className="pointer-events-none absolute right-0 top-40 h-32 w-32 rounded-full bg-powder/40 blur-2xl" />
         <Reveal className="relative flex flex-col items-start gap-4 text-left">
           <h1 className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">
             Tiers of Joy
           </h1>
-          <p className="font-script text-3xl text-olive-dark">
+          <p className="font-script text-3xl text-slate-dark">
             Cakes by Renee
           </p>
           <p className="max-w-md text-lg text-ink/70">
@@ -108,7 +108,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-4">
             <Link
               href="/shop"
-              className="flex h-12 items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+              className="flex h-12 items-center justify-center rounded-full bg-slate-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-slate-darker hover:shadow-lg"
             >
               Shop Now
             </Link>
@@ -126,7 +126,7 @@ export default function Home() {
         </Reveal>
         <Reveal
           delay={150}
-          className="animate-float relative mx-auto max-h-[360px] w-full max-w-[300px] overflow-hidden rounded-[2rem] bg-turquoise/30 shadow-xl"
+          className="animate-float relative mx-auto max-h-[360px] w-full max-w-[300px] overflow-hidden rounded-[2rem] bg-powder/30 shadow-xl"
         >
           <Image
             src="/photos/montage-courtyard.jpg"
@@ -144,17 +144,14 @@ export default function Home() {
         <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-sky/50 blur-3xl" />
         <div className="pointer-events-none absolute -right-16 bottom-0 h-56 w-56 rounded-full bg-white/60 blur-3xl" />
         <div className="relative mx-auto grid w-full max-w-5xl grid-cols-1 items-center gap-10 px-6 md:grid-cols-2">
-          <Reveal className="relative overflow-hidden rounded-[2rem] shadow-xl">
+          <Reveal className="overflow-hidden rounded-[2rem] shadow-xl">
             <Image
-              src="/photos/cake-sports-allstar.jpg"
-              alt="A sports-themed diaper cake with football, basketball, and soccer accents"
-              width={896}
-              height={1062}
+              src="/photos/cake-knicks.jpg"
+              alt="A New York Knicks themed diaper cake with a jersey topper"
+              width={1024}
+              height={550}
               className="h-full w-full object-cover"
             />
-            <span className="absolute bottom-4 left-4 rounded-full bg-slate-dark/90 px-4 py-1.5 text-sm font-bold uppercase tracking-wide text-cream">
-              Knicks
-            </span>
           </Reveal>
           <Reveal delay={100} className="flex flex-col items-start gap-4 text-left">
             <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -167,7 +164,7 @@ export default function Home() {
             </p>
             <Link
               href="/contact"
-              className="flex h-12 items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+              className="flex h-12 items-center justify-center rounded-full bg-slate-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-slate-darker hover:shadow-lg"
             >
               Request a Team Cake
             </Link>
@@ -263,7 +260,7 @@ export default function Home() {
       </section>
 
       {/* Why Tiers of Joy */}
-      <section className="bg-turquoise/20 py-20">
+      <section className="bg-powder/20 py-20">
         <div className="mx-auto w-full max-w-5xl px-6">
           <Reveal>
             <h2 className="font-display text-center text-3xl font-semibold tracking-tight">
@@ -300,7 +297,7 @@ export default function Home() {
         <div className="mt-10 flex justify-center">
           <Link
             href="/shop"
-            className="flex h-12 items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+            className="flex h-12 items-center justify-center rounded-full bg-slate-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-slate-darker hover:shadow-lg"
           >
             View All Products
           </Link>
@@ -308,7 +305,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-coral/20 py-20">
+      <section className="bg-blush/20 py-20">
         <div className="mx-auto w-full max-w-5xl px-6">
           <Reveal>
             <h2 className="font-display text-center text-3xl font-semibold tracking-tight">
@@ -333,7 +330,7 @@ export default function Home() {
 
       {/* For Businesses teaser */}
       <section className="mx-auto w-full max-w-5xl px-6 py-20">
-        <Reveal className="flex flex-col items-center gap-4 rounded-[2rem] bg-marigold/30 px-8 py-14 text-center">
+        <Reveal className="flex flex-col items-center gap-4 rounded-[2rem] bg-butter/30 px-8 py-14 text-center">
           <h2 className="font-display text-2xl font-semibold sm:text-3xl">
             Own a boutique, daycare, or pet grooming business?
           </h2>
@@ -390,7 +387,7 @@ export default function Home() {
       </section>
 
       {/* Email signup band */}
-      <section className="bg-[linear-gradient(120deg,var(--color-coral),var(--color-marigold))] py-16">
+      <section className="bg-[linear-gradient(120deg,var(--color-blush),var(--color-butter))] py-16">
         <Reveal className="mx-auto flex w-full max-w-3xl flex-col items-center gap-5 px-6 text-center">
           <h2 className="font-display text-2xl font-semibold sm:text-3xl">
             Get 10% off your first cake

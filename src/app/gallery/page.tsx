@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 };
 
 const THEME_BG: Record<Theme, string> = {
-  olive: "bg-olive/35",
-  turquoise: "bg-turquoise/35",
-  marigold: "bg-marigold/35",
-  coral: "bg-coral/35",
+  seafoam: "bg-seafoam/35",
+  powder: "bg-powder/35",
+  butter: "bg-butter/35",
+  blush: "bg-blush/35",
 };
 
 export default function Gallery() {
@@ -43,7 +43,7 @@ export default function Gallery() {
                 className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-x-0 bottom-0 bg-[linear-gradient(to_top,rgba(79,107,114,0.85),transparent)] p-3 pt-8">
-                <p className="text-xs font-bold uppercase tracking-wide text-marigold">
+                <p className="text-xs font-bold uppercase tracking-wide text-butter">
                   {photo.tag}
                 </p>
                 <p className="font-display text-sm font-semibold text-cream">
@@ -85,7 +85,7 @@ export default function Gallery() {
         ))}
       </div>
 
-      <Reveal className="mt-16 flex flex-col items-center gap-4 rounded-3xl bg-turquoise/35 px-8 py-12 text-center">
+      <Reveal className="mt-16 flex flex-col items-center gap-4 rounded-3xl bg-powder/35 px-8 py-12 text-center">
         <h2 className="font-display text-2xl font-semibold">
           Don&apos;t See Exactly What You Want?
         </h2>
@@ -95,7 +95,7 @@ export default function Gallery() {
         </p>
         <Link
           href="/contact"
-          className="flex h-12 items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+          className="flex h-12 items-center justify-center rounded-full bg-slate-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-slate-darker hover:shadow-lg"
         >
           Request a Custom Design
         </Link>

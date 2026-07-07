@@ -1,10 +1,10 @@
 import type { Theme, Topper } from "@/lib/products";
 
 const THEME_COLORS: Record<Theme, { light: string; dark: string }> = {
-  olive: { light: "#dbe0ae", dark: "#74812f" },
-  turquoise: { light: "#a9dfd8", dark: "#147d77" },
-  marigold: { light: "#f6d488", dark: "#e29317" },
-  coral: { light: "#fac2b8", dark: "#e8503f" },
+  seafoam: { light: "#dde8dd", dark: "#7fa389" },
+  powder: { light: "#d4e8ee", dark: "#5f96a8" },
+  butter: { light: "#f6e9c3", dark: "#cca044" },
+  blush: { light: "#f3d9d4", dark: "#cd8f89" },
 };
 
 function Topper({ topper, dark }: { topper: Topper; dark: string }) {

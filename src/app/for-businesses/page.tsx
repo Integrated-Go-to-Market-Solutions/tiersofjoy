@@ -36,7 +36,7 @@ export default function ForBusinesses() {
         <ul className="mt-4 flex flex-col gap-2 text-ink/70">
           {PARTNER_TYPES.map((type) => (
             <li key={type} className="flex items-center gap-2">
-              <span className="text-olive-dark">•</span> {type}
+              <span className="text-slate-dark">•</span> {type}
             </li>
           ))}
         </ul>
@@ -57,7 +57,7 @@ export default function ForBusinesses() {
 
       <Link
         href="/contact?type=business"
-        className="mt-10 flex h-12 w-full max-w-xs items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+        className="mt-10 flex h-12 w-full max-w-xs items-center justify-center rounded-full bg-slate-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-slate-darker hover:shadow-lg"
       >
         Start the Conversation
       </Link>

@@ -1,34 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbf1e1;
+  --background: #f7f0e4;
   --foreground: #2e1a12;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-poppins);
+  --font-sans: var(--font-lora);
   --font-display: var(--font-bodoni);
-  --font-script: var(--font-yellowtail);
+  --font-script: var(--font-parisienne);
 
-  --color-cream: #fbf1e1;
+  --color-cream: #f7f0e4;
   --color-ink: #2e1a12;
 
-  --color-olive: #dbe0ae;
-  --color-olive-dark: #74812f;
-  --color-turquoise: #a9dfd8;
-  --color-turquoise-dark: #147d77;
-  --color-marigold: #f6d488;
-  --color-marigold-dark: #e29317;
-  --color-coral: #fac2b8;
-  --color-coral-dark: #e8503f;
+  --color-seafoam: #dde8dd;
+  --color-seafoam-dark: #7fa389;
+  --color-powder: #d4e8ee;
+  --color-powder-dark: #5f96a8;
+  --color-butter: #f6e9c3;
+  --color-butter-dark: #cca044;
+  --color-blush: #f3d9d4;
+  --color-blush-dark: #cd8f89;
   --color-palm: #cfe0c9;
   --color-palm-dark: #2f6b4f;
-  --color-sky: #bfe0f2;
-  --color-sky-dark: #4a90b8;
-  --color-slate: #b7c9cc;
+  --color-sky: #c6e2ec;
+  --color-sky-dark: #5599b3;
+  --color-slate: #c3d3d5;
   --color-slate-dark: #4f6b72;
+  --color-slate-darker: #3a4f54;
 }
 
 body {

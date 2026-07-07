@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import { SITE } from "@/lib/site";
 
@@ -10,8 +11,15 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <div className="mx-auto w-full max-w-2xl px-6 py-16">
-      <Reveal>
-        <span className="font-display inline-block rounded-full bg-marigold/40 px-4 py-1 text-sm font-bold uppercase tracking-wide text-olive-dark">
+      <Reveal className="flex flex-col items-center text-center">
+        <Image
+          src="/photos/logo-tiers-of-joy.png"
+          alt="Tiers of Joy, Cakes by Renee"
+          width={468}
+          height={400}
+          className="h-40 w-auto"
+        />
+        <span className="font-display mt-2 inline-block rounded-full bg-butter/40 px-4 py-1 text-sm font-bold uppercase tracking-wide text-slate-dark">
           Est. {SITE.sinceYear}
         </span>
         <h1 className="font-display mt-4 text-4xl font-semibold tracking-tight">

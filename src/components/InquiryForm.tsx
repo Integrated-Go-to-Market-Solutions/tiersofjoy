@@ -48,12 +48,12 @@ export default function InquiryForm({
     PRODUCTS.find((p) => p.slug === initialDesign)?.name ?? "";
 
   const fieldClass =
-    "h-11 rounded-lg border-2 border-ink/15 bg-white px-4 text-base outline-none focus:border-olive-dark";
+    "h-11 rounded-lg border-2 border-ink/15 bg-white px-4 text-base outline-none focus:border-slate-dark";
 
   return (
     <div className="flex flex-col gap-4">
       {sent && (
-        <p className="rounded-xl bg-turquoise/30 p-4 text-sm text-ink/70">
+        <p className="rounded-xl bg-powder/30 p-4 text-sm text-ink/70">
           Your email app should have opened with your inquiry ready to send.
           If it didn&apos;t, email us directly at{" "}
           <a href={`mailto:${SITE.email}`} className="underline">
@@ -121,12 +121,12 @@ export default function InquiryForm({
             required
             rows={5}
             placeholder="Tell us about your event, theme, colors, and budget."
-            className="rounded-lg border-2 border-ink/15 bg-white px-4 py-3 text-base outline-none focus:border-olive-dark"
+            className="rounded-lg border-2 border-ink/15 bg-white px-4 py-3 text-base outline-none focus:border-slate-dark"
           />
         </label>
         <button
           type="submit"
-          className="flex h-12 items-center justify-center rounded-full bg-olive-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
+          className="flex h-12 items-center justify-center rounded-full bg-slate-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-slate-darker hover:shadow-lg"
         >
           Send Inquiry
         </button>

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins, Bodoni_Moda, Yellowtail } from "next/font/google";
+import { Lora, Bodoni_Moda, Parisienne } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -15,8 +15,8 @@ const bodoni = Bodoni_Moda({
   subsets: ["latin"],
 });
 
-const yellowtail = Yellowtail({
-  variable: "--font-yellowtail",
+const parisienne = Parisienne({
+  variable: "--font-parisienne",
   subsets: ["latin"],
   weight: "400",
 });
@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${bodoni.variable} ${yellowtail.variable} h-full antialiased`}
+      className={`${lora.variable} ${bodoni.variable} ${parisienne.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-ink">
         <Header />
