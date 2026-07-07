@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import InquiryForm from "@/components/InquiryForm";
+import Reveal from "@/components/Reveal";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -16,22 +17,24 @@ export default async function Contact({
 
   return (
     <div className="mx-auto w-full max-w-2xl px-6 py-16">
-      <h1 className="font-display text-4xl font-semibold tracking-tight">
-        Contact
-      </h1>
-      <p className="mt-4 text-lg text-ink/70">
-        Tell us about your event and we&apos;ll follow up to confirm details,
-        timing, and pricing before anything is finalized.
-      </p>
+      <Reveal>
+        <h1 className="font-display text-4xl font-semibold tracking-tight">
+          Contact
+        </h1>
+        <p className="mt-4 text-lg text-ink/70">
+          Tell us about your event and we&apos;ll follow up to confirm details,
+          timing, and pricing before anything is finalized.
+        </p>
+      </Reveal>
 
-      <div className="mt-10">
+      <Reveal delay={100} className="mt-10">
         <InquiryForm
           initialDesign={design}
           initialType={type === "business" ? "business" : "order"}
         />
-      </div>
+      </Reveal>
 
-      <dl className="mt-12 space-y-2 border-t border-black/[.08] pt-8 text-base">
+      <dl className="mt-12 space-y-2 border-t border-ink/10 pt-8 text-base">
         <div className="flex gap-2">
           <dt className="font-medium">Email:</dt>
           <dd>

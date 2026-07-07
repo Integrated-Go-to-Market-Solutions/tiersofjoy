@@ -12,8 +12,8 @@ export default function EmailSignup() {
 
   if (submitted) {
     return (
-      <p className="text-lg font-medium">
-        Thanks for joining the list — keep an eye on your inbox!
+      <p className="text-lg font-semibold">
+        Thanks for joining the list. Keep an eye on your inbox!
       </p>
     );
   }
@@ -27,11 +27,11 @@ export default function EmailSignup() {
         type="email"
         required
         placeholder="Your email address"
-        className="h-12 flex-1 rounded-full border border-black/[.1] bg-white px-5 text-base outline-none focus:border-blush-dark"
+        className="h-12 flex-1 rounded-full border-2 border-ink/15 bg-white px-5 text-base outline-none focus:border-terracotta-dark"
       />
       <button
         type="submit"
-        className="h-12 rounded-full bg-foreground px-6 text-base font-medium text-background transition-colors hover:bg-[#383838]"
+        className="h-12 rounded-full bg-ink px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg"
       >
         Subscribe
       </button>

@@ -1,30 +1,82 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fdf8f4;
-  --foreground: #3f342e;
+  --background: #fbf1e1;
+  --foreground: #2e1a12;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-bodoni);
+  --font-script: var(--font-yellowtail);
 
-  --color-cream: #fdf8f4;
-  --color-blush: #f2c9ce;
-  --color-blush-dark: #d98a95;
-  --color-sage: #cfe0c5;
-  --color-sage-dark: #7c9a68;
-  --color-sand: #ecdcc2;
-  --color-sand-dark: #cf9f5f;
-  --color-sky: #cfe3ef;
-  --color-sky-dark: #6f9dbf;
-  --color-ink: #3f342e;
+  --color-cream: #fbf1e1;
+  --color-ink: #2e1a12;
+
+  --color-terracotta: #f0b892;
+  --color-terracotta-dark: #c1502e;
+  --color-turquoise: #a9dfd8;
+  --color-turquoise-dark: #147d77;
+  --color-marigold: #f6d488;
+  --color-marigold-dark: #e29317;
+  --color-coral: #fac2b8;
+  --color-coral-dark: #e8503f;
+  --color-palm: #cfe0c9;
+  --color-palm-dark: #2f6b4f;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.animate-float {
+  animation: float 4.5s ease-in-out infinite;
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-marquee,
+  .animate-wiggle {
+    animation: none;
+  }
 }

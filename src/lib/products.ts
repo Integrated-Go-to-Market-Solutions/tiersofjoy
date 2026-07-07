@@ -1,4 +1,4 @@
-export type Theme = "blush" | "sage" | "sand" | "sky";
+export type Theme = "terracotta" | "turquoise" | "marigold" | "coral";
 export type Topper = "bow" | "goggles" | "paw";
 export type CategorySlug = "baby-shower" | "swim" | "pet";
 
@@ -42,7 +42,7 @@ export const CATEGORIES: Category[] = [
     emoji: "🏖️",
     tagline: "A fun twist for spring and summer showers.",
     description:
-      "Built with swim diapers, goggles, and baby-safe sunscreen — perfect for a pool-themed shower or a beach baby.",
+      "Built with swim diapers, goggles, and baby-safe sunscreen, perfect for a pool-themed shower or a beach baby.",
   },
   {
     slug: "pet",
@@ -51,7 +51,7 @@ export const CATEGORIES: Category[] = [
     emoji: "🐾",
     tagline: 'Because new puppies deserve a "shower" too.',
     description:
-      "Built with wee-wee pads and topped with chew toys — a genuinely unique gift for new pet parents.",
+      "Built with wee-wee pads and topped with chew toys, a genuinely unique gift for new pet parents.",
   },
 ];
 
@@ -61,13 +61,13 @@ export const PRODUCTS: Product[] = [
     name: "Blush Blossom",
     category: "baby-shower",
     tiers: 3,
-    theme: "blush",
+    theme: "coral",
     topper: "bow",
     occasion: "Baby Shower",
     size: "3-tier · approx. 30 diapers",
     priceRange: "$75–$95",
     description:
-      "Soft blush and cream layers finished with a hand-tied satin bow and silk florals.",
+      "Blush and cream layers finished with a hand-tied satin bow and silk florals.",
     bestSeller: true,
   },
   {
@@ -75,13 +75,13 @@ export const PRODUCTS: Product[] = [
     name: "Safari Sprout",
     category: "baby-shower",
     tiers: 3,
-    theme: "sand",
+    theme: "marigold",
     topper: "bow",
     occasion: "Gender-Neutral",
     size: "3-tier · approx. 32 diapers",
     priceRange: "$85–$105",
     description:
-      "Warm neutrals with a mini safari topper — perfect for jungle or wild-one themes.",
+      "Warm neutrals with a mini safari topper, perfect for jungle or wild-one themes.",
     bestSeller: true,
   },
   {
@@ -89,39 +89,39 @@ export const PRODUCTS: Product[] = [
     name: "Little Sailor",
     category: "baby-shower",
     tiers: 2,
-    theme: "sky",
+    theme: "turquoise",
     topper: "bow",
     occasion: "Nautical / Boy",
     size: "2-tier · approx. 20 diapers",
     priceRange: "$60–$75",
     description:
-      "Crisp sky-blue tiers with anchor ribbon trim for a nautical-themed shower.",
+      "Crisp turquoise tiers with anchor ribbon trim for a nautical-themed shower.",
   },
   {
     slug: "sweet-pea",
     name: "Sweet Pea",
     category: "baby-shower",
     tiers: 2,
-    theme: "blush",
+    theme: "coral",
     topper: "bow",
     occasion: "Girl",
     size: "2-tier · approx. 20 diapers",
     priceRange: "$60–$75",
     description:
-      "Delicate pink tiers wrapped in pea-pod green trim, topped with a tiny bow.",
+      "Bright coral tiers wrapped in palm-green trim, topped with a tiny bow.",
   },
   {
     slug: "sage-and-cream-classic",
-    name: "Sage & Cream Classic",
+    name: "Sunset Classic",
     category: "baby-shower",
     tiers: 4,
-    theme: "sage",
+    theme: "terracotta",
     topper: "bow",
     occasion: "Baby Shower",
     size: "4-tier · approx. 45 diapers",
     priceRange: "$110–$135",
     description:
-      "Our signature tall centerpiece — four generous tiers in sage and cream.",
+      "Our tallest centerpiece: four generous tiers in terracotta and cream.",
     bestSeller: true,
   },
   {
@@ -129,66 +129,66 @@ export const PRODUCTS: Product[] = [
     name: "Twin Joy",
     category: "baby-shower",
     tiers: 2,
-    theme: "sky",
+    theme: "turquoise",
     topper: "bow",
     occasion: "Twins",
     size: "Two 2-tier cakes · approx. 40 diapers total",
     priceRange: "$130–$160",
     description:
-      "A matching pair, one for each little one — customizable in any two colors.",
+      "A matching pair, one for each little one. Customizable in any two colors.",
   },
   {
     slug: "sunny-swim-splash",
     name: "Sunny Swim Splash",
     category: "swim",
     tiers: 3,
-    theme: "sky",
+    theme: "turquoise",
     topper: "goggles",
     occasion: "Pool / Beach Shower",
     size: "3-tier · swim diapers, goggles, mini sunscreen",
     priceRange: "$80–$100",
     description:
-      "Built with swim diapers and topped with a pair of tiny goggles — ready for a poolside shower.",
+      "Built with swim diapers and topped with a pair of tiny goggles, ready for a poolside shower.",
     bestSeller: true,
   },
   {
     slug: "poolside-pastel",
-    name: "Poolside Pastel",
+    name: "Poolside Paradise",
     category: "swim",
     tiers: 2,
-    theme: "sand",
+    theme: "marigold",
     topper: "goggles",
     occasion: "Summer Shower",
     size: "2-tier · swim diapers, goggles, baby-safe sunscreen",
     priceRange: "$65–$80",
     description:
-      "Soft sandy tones with a sunscreen stick tucked in every tier — a sweet beach-baby gift.",
+      "Sunny marigold tones with a sunscreen stick tucked into every tier.",
   },
   {
     slug: "little-mermaid-splash",
     name: "Little Mermaid Splash",
     category: "swim",
     tiers: 3,
-    theme: "sky",
+    theme: "coral",
     topper: "goggles",
     occasion: "Girl / Beach Shower",
     size: "3-tier · swim diapers, goggles, mini sunscreen",
     priceRange: "$80–$100",
     description:
-      "Aqua and cream tiers with shimmer ribbon trim, styled for a mermaid or under-the-sea shower.",
+      "Coral and turquoise tiers with shimmer ribbon trim, styled for an under-the-sea shower.",
   },
   {
     slug: "puppy-welcome-wag",
     name: "Puppy Welcome Wag",
     category: "pet",
     tiers: 2,
-    theme: "sand",
+    theme: "marigold",
     topper: "paw",
     occasion: "New Puppy",
     size: "2-tier · wee-wee pads, chew toy topper",
     priceRange: "$45–$60",
     description:
-      "Built with wee-wee pads and topped with a squeaky chew toy — a genuinely unique gift for new pet parents.",
+      "Built with wee-wee pads and topped with a squeaky chew toy. A genuinely unique gift for new pet parents.",
     bestSeller: true,
   },
   {
@@ -196,7 +196,7 @@ export const PRODUCTS: Product[] = [
     name: "New Pup Celebration",
     category: "pet",
     tiers: 3,
-    theme: "sage",
+    theme: "terracotta",
     topper: "paw",
     occasion: "New Puppy",
     size: "3-tier · wee-wee pads, treats, chew toys",
@@ -209,7 +209,7 @@ export const PRODUCTS: Product[] = [
     name: "Gotcha Day Gift",
     category: "pet",
     tiers: 2,
-    theme: "blush",
+    theme: "coral",
     topper: "paw",
     occasion: "Rescue / Gotcha Day",
     size: "2-tier · wee-wee pads, chew toy topper",

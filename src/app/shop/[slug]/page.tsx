@@ -12,10 +12,10 @@ import {
 } from "@/lib/products";
 
 const THEME_BG: Record<Theme, string> = {
-  blush: "bg-blush/25",
-  sage: "bg-sage/25",
-  sand: "bg-sand/25",
-  sky: "bg-sky/25",
+  terracotta: "bg-terracotta/35",
+  turquoise: "bg-turquoise/35",
+  marigold: "bg-marigold/35",
+  coral: "bg-coral/35",
 };
 
 export function generateStaticParams() {
@@ -74,11 +74,11 @@ export default async function ProductPage({
             theme={product.theme}
             topper={product.topper}
             tiers={product.tiers}
-            className="h-full w-full max-w-[220px]"
+            className="animate-float h-full w-full max-w-[220px]"
           />
         </div>
         <div className="flex flex-col gap-4">
-          <span className="text-xs font-semibold uppercase tracking-wide text-ink/50">
+          <span className="text-xs font-bold uppercase tracking-wide text-ink/50">
             {product.occasion}
           </span>
           <h1 className="font-display text-3xl font-semibold tracking-tight">
@@ -97,12 +97,12 @@ export default async function ProductPage({
           </dl>
           <Link
             href={`/contact?design=${product.slug}`}
-            className="mt-2 flex h-12 w-full max-w-xs items-center justify-center rounded-full bg-foreground px-6 text-base font-medium text-background transition-colors hover:bg-[#383838]"
+            className="mt-2 flex h-12 w-full max-w-xs items-center justify-center rounded-full bg-terracotta-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
           >
             Request This Cake
           </Link>
           <p className="text-sm text-ink/50">
-            Every cake is made to order — reach out and we&apos;ll confirm
+            Every cake is made to order. Reach out and we&apos;ll confirm
             details, timing, and delivery before anything is finalized.
           </p>
         </div>

@@ -26,7 +26,7 @@ export default function InquiryForm({
     const eventDate = String(form.get("eventDate") ?? "");
     const message = String(form.get("message") ?? "");
 
-    const subject = `New Inquiry: ${inquiryType}${design && design !== "Not sure / Custom" ? ` — ${design}` : ""}`;
+    const subject = `New Inquiry: ${inquiryType}${design && design !== "Not sure / Custom" ? ` for ${design}` : ""}`;
     const body = [
       `Name: ${name}`,
       `Email: ${email}`,
@@ -47,10 +47,13 @@ export default function InquiryForm({
   const defaultDesignLabel =
     PRODUCTS.find((p) => p.slug === initialDesign)?.name ?? "";
 
+  const fieldClass =
+    "h-11 rounded-lg border-2 border-ink/15 bg-white px-4 text-base outline-none focus:border-terracotta-dark";
+
   return (
     <div className="flex flex-col gap-4">
       {sent && (
-        <p className="rounded-xl bg-sage/25 p-4 text-sm text-ink/70">
+        <p className="rounded-xl bg-turquoise/30 p-4 text-sm text-ink/70">
           Your email app should have opened with your inquiry ready to send.
           If it didn&apos;t, email us directly at{" "}
           <a href={`mailto:${SITE.email}`} className="underline">
@@ -61,50 +64,32 @@ export default function InquiryForm({
       )}
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <label className="flex flex-col gap-1.5 text-sm font-medium">
+          <label className="flex flex-col gap-1.5 text-sm font-semibold">
             Name
-            <input
-              name="name"
-              type="text"
-              required
-              className="h-11 rounded-lg border border-black/[.12] bg-white px-4 text-base outline-none focus:border-blush-dark"
-            />
+            <input name="name" type="text" required className={fieldClass} />
           </label>
-          <label className="flex flex-col gap-1.5 text-sm font-medium">
+          <label className="flex flex-col gap-1.5 text-sm font-semibold">
             Email
-            <input
-              name="email"
-              type="email"
-              required
-              className="h-11 rounded-lg border border-black/[.12] bg-white px-4 text-base outline-none focus:border-blush-dark"
-            />
+            <input name="email" type="email" required className={fieldClass} />
           </label>
         </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <label className="flex flex-col gap-1.5 text-sm font-medium">
+          <label className="flex flex-col gap-1.5 text-sm font-semibold">
             Phone (optional)
-            <input
-              name="phone"
-              type="tel"
-              className="h-11 rounded-lg border border-black/[.12] bg-white px-4 text-base outline-none focus:border-blush-dark"
-            />
+            <input name="phone" type="tel" className={fieldClass} />
           </label>
-          <label className="flex flex-col gap-1.5 text-sm font-medium">
+          <label className="flex flex-col gap-1.5 text-sm font-semibold">
             Event date (optional)
-            <input
-              name="eventDate"
-              type="date"
-              className="h-11 rounded-lg border border-black/[.12] bg-white px-4 text-base outline-none focus:border-blush-dark"
-            />
+            <input name="eventDate" type="date" className={fieldClass} />
           </label>
         </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <label className="flex flex-col gap-1.5 text-sm font-medium">
+          <label className="flex flex-col gap-1.5 text-sm font-semibold">
             Inquiry type
             <select
               name="inquiryType"
               defaultValue={initialType === "business" ? "Business Partnership" : "Order a Cake"}
-              className="h-11 rounded-lg border border-black/[.12] bg-white px-4 text-base outline-none focus:border-blush-dark"
+              className={fieldClass}
             >
               {INQUIRY_TYPES.map((type) => (
                 <option key={type} value={type}>
@@ -113,12 +98,12 @@ export default function InquiryForm({
               ))}
             </select>
           </label>
-          <label className="flex flex-col gap-1.5 text-sm font-medium">
+          <label className="flex flex-col gap-1.5 text-sm font-semibold">
             Design of interest
             <select
               name="design"
               defaultValue={defaultDesignLabel || "Not sure / Custom"}
-              className="h-11 rounded-lg border border-black/[.12] bg-white px-4 text-base outline-none focus:border-blush-dark"
+              className={fieldClass}
             >
               <option value="Not sure / Custom">Not sure / Custom</option>
               {PRODUCTS.map((p) => (
@@ -129,19 +114,19 @@ export default function InquiryForm({
             </select>
           </label>
         </div>
-        <label className="flex flex-col gap-1.5 text-sm font-medium">
+        <label className="flex flex-col gap-1.5 text-sm font-semibold">
           Message
           <textarea
             name="message"
             required
             rows={5}
             placeholder="Tell us about your event, theme, colors, and budget."
-            className="rounded-lg border border-black/[.12] bg-white px-4 py-3 text-base outline-none focus:border-blush-dark"
+            className="rounded-lg border-2 border-ink/15 bg-white px-4 py-3 text-base outline-none focus:border-terracotta-dark"
           />
         </label>
         <button
           type="submit"
-          className="flex h-12 items-center justify-center rounded-full bg-foreground px-6 text-base font-medium text-background transition-colors hover:bg-[#383838]"
+          className="flex h-12 items-center justify-center rounded-full bg-terracotta-dark px-6 text-base font-semibold text-cream shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:bg-coral-dark hover:shadow-lg"
         >
           Send Inquiry
         </button>

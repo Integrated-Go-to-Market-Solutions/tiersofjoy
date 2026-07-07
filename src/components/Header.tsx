@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { href: "/shop", label: "Shop" },
@@ -12,17 +13,25 @@ const NAV_LINKS = [
 
 export default function Header() {
   return (
-    <header className="border-b border-black/[.08] bg-cream/90 backdrop-blur">
-      <nav className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-6 py-5">
-        <Link href="/" className="font-display text-lg font-semibold tracking-tight">
-          Tiers of Joy
+    <header className="sticky top-0 z-20 bg-cream/95 backdrop-blur">
+      <div className="h-1.5 w-full bg-[linear-gradient(90deg,var(--color-terracotta-dark),var(--color-marigold-dark),var(--color-turquoise-dark),var(--color-coral-dark))]" />
+      <nav className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 border-b border-ink/10 px-6 py-4">
+        <Link href="/" className="shrink-0 transition-transform hover:scale-105">
+          <Image
+            src="/photos/logo-tiers-of-joy.jpg"
+            alt="Tiers of Joy, Inedible Cakes by Renee"
+            width={960}
+            height={1113}
+            priority
+            className="h-16 w-auto"
+          />
         </Link>
-        <ul className="flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium">
+        <ul className="flex flex-wrap gap-x-5 gap-y-1 text-sm font-semibold">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-ink/60 transition-colors hover:text-ink"
+                className="relative text-ink/70 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-terracotta-dark after:transition-all after:duration-300 hover:text-ink hover:after:w-full"
               >
                 {link.label}
               </Link>

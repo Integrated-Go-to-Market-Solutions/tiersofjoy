@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Reveal from "@/components/Reveal";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -9,13 +10,15 @@ export const metadata: Metadata = {
 export default function ShippingPolicy() {
   return (
     <div className="mx-auto w-full max-w-2xl px-6 py-16">
-      <h1 className="font-display text-4xl font-semibold tracking-tight">
-        Shipping Policy
-      </h1>
-      <div className="mt-6 flex flex-col gap-5 text-ink/70">
+      <Reveal>
+        <h1 className="font-display text-4xl font-semibold tracking-tight">
+          Shipping Policy
+        </h1>
+      </Reveal>
+      <Reveal delay={100} className="mt-6 flex flex-col gap-5 text-ink/70">
         <p>
           <em>
-            Draft policy — replace the specifics below (processing time,
+            Draft policy. Replace the specifics below (processing time,
             delivery area, shipping cost) with your actual terms.
           </em>
         </p>
@@ -30,13 +33,13 @@ export default function ShippingPolicy() {
           dates will be confirmed at the time of your inquiry.
         </p>
         <p>
-          <strong className="text-ink">Nationwide shipping.</strong> Cakes
-          can be shipped nationwide. Shipping cost and estimated transit time
+          <strong className="text-ink">Nationwide shipping.</strong> Coming
+          soon. Once available, shipping cost and estimated transit time
           will be provided before your order is finalized.
         </p>
         <p>
           <strong className="text-ink">Pickup.</strong> Local pickup can be
-          arranged by request — mention this in your inquiry.
+          arranged by request. Just mention it in your inquiry.
         </p>
         <p>
           Questions about a specific order? Reach out at{" "}
@@ -45,7 +48,7 @@ export default function ShippingPolicy() {
           </a>
           .
         </p>
-      </div>
+      </Reveal>
     </div>
   );
 }

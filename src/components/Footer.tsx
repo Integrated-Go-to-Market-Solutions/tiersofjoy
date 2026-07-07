@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE } from "@/lib/site";
 
 const QUICK_LINKS = [
@@ -19,23 +20,31 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-black/[.08] bg-white">
-      <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-10 px-6 py-12 sm:grid-cols-3">
+    <footer className="bg-ink text-cream">
+      <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-10 px-6 py-14 sm:grid-cols-3">
         <div>
-          <p className="font-display text-lg font-semibold">{SITE.name}</p>
-          <p className="mt-1 text-sm text-ink/60">{SITE.tagline}</p>
-          <div className="mt-4 flex flex-col gap-1 text-sm text-ink/70">
-            <a href={`mailto:${SITE.email}`} className="hover:underline">
+          <div className="inline-block rounded-xl bg-cream p-2 shadow-md">
+            <Image
+              src="/photos/logo-tiers-of-joy.jpg"
+              alt="Tiers of Joy, Inedible Cakes by Renee"
+              width={960}
+              height={1113}
+              className="h-20 w-auto"
+            />
+          </div>
+          <p className="mt-3 text-sm text-cream/60">{SITE.tagline}</p>
+          <div className="mt-4 flex flex-col gap-1 text-sm text-cream/80">
+            <a href={`mailto:${SITE.email}`} className="hover:text-marigold">
               {SITE.email}
             </a>
-            <a href={`tel:${SITE.phoneHref}`} className="hover:underline">
+            <a href={`tel:${SITE.phoneHref}`} className="hover:text-marigold">
               {SITE.phoneDisplay}
             </a>
             <a
               href={SITE.instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="hover:text-marigold"
             >
               {SITE.instagramHandle}
             </a>
@@ -43,11 +52,13 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-sm font-semibold text-ink">Quick Links</p>
-          <ul className="mt-3 flex flex-col gap-2 text-sm text-ink/70">
+          <p className="text-sm font-bold uppercase tracking-wide text-turquoise">
+            Quick Links
+          </p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm text-cream/80">
             {QUICK_LINKS.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="hover:underline">
+                <Link href={link.href} className="hover:text-marigold">
                   {link.label}
                 </Link>
               </li>
@@ -56,11 +67,13 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-sm font-semibold text-ink">Policies</p>
-          <ul className="mt-3 flex flex-col gap-2 text-sm text-ink/70">
+          <p className="text-sm font-bold uppercase tracking-wide text-turquoise">
+            Policies
+          </p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm text-cream/80">
             {POLICY_LINKS.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="hover:underline">
+                <Link href={link.href} className="hover:text-marigold">
                   {link.label}
                 </Link>
               </li>
@@ -68,8 +81,8 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-black/[.06] px-6 py-6 text-center text-sm text-ink/50">
-        © {year} {SITE.name} — {SITE.tagline}
+      <div className="border-t border-cream/10 px-6 py-6 text-center text-sm text-cream/50">
+        © {year} {SITE.name} · {SITE.tagline}
       </div>
     </footer>
   );

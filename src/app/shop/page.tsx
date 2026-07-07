@@ -39,10 +39,10 @@ export default async function Shop({
       <div className="mt-10 flex flex-wrap justify-center gap-3">
         <Link
           href="/shop"
-          className={`rounded-full px-5 py-2 text-sm font-medium transition-colors ${
+          className={`rounded-full px-5 py-2 text-sm font-semibold transition-all duration-300 hover:scale-105 ${
             !activeCategory
-              ? "bg-foreground text-background"
-              : "border border-black/[.12] hover:bg-black/[.04]"
+              ? "bg-terracotta-dark text-cream shadow-md"
+              : "border-2 border-ink/15 hover:bg-ink/5"
           }`}
         >
           All Cakes
@@ -51,10 +51,10 @@ export default async function Shop({
           <Link
             key={cat.slug}
             href={`/shop?category=${cat.slug}`}
-            className={`rounded-full px-5 py-2 text-sm font-medium transition-colors ${
+            className={`rounded-full px-5 py-2 text-sm font-semibold transition-all duration-300 hover:scale-105 ${
               activeCategory === cat.slug
-                ? "bg-foreground text-background"
-                : "border border-black/[.12] hover:bg-black/[.04]"
+                ? "bg-terracotta-dark text-cream shadow-md"
+                : "border-2 border-ink/15 hover:bg-ink/5"
             }`}
           >
             {cat.emoji} {cat.shortName}

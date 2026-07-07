@@ -10,7 +10,7 @@ export default function Accordion({
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <div className="flex flex-col divide-y divide-black/[.08]">
+    <div className="flex flex-col divide-y-2 divide-ink/10">
       {items.map((item, i) => {
         const open = openIndex === i;
         return (
@@ -21,12 +21,25 @@ export default function Accordion({
               className="flex w-full items-center justify-between gap-4 text-left"
               aria-expanded={open}
             >
-              <span className="font-display text-lg font-medium">
+              <span className="font-display text-lg font-semibold">
                 {item.question}
               </span>
-              <span className="text-xl text-ink/40">{open ? "−" : "+"}</span>
+              <span
+                className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-terracotta/40 text-lg font-bold text-terracotta-dark transition-transform duration-300 ${
+                  open ? "rotate-180" : ""
+                }`}
+              >
+                {open ? "−" : "+"}
+              </span>
             </button>
-            {open && <p className="mt-3 text-ink/70">{item.answer}</p>}
+            <div
+              className="grid transition-[grid-template-rows] duration-300 ease-out"
+              style={{ gridTemplateRows: open ? "1fr" : "0fr" }}
+            >
+              <p className="overflow-hidden text-ink/70">
+                <span className="block pt-3">{item.answer}</span>
+              </p>
+            </div>
           </div>
         );
       })}
